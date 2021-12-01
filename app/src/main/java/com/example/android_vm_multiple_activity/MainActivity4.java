@@ -14,20 +14,19 @@ import android.widget.TextView;
 
 
 public class MainActivity4 extends AppCompatActivity implements View.OnClickListener{
-
     String s = "відповідь прийнято";
     Button btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main4);
-        btn = findViewById(R.id.btnActFive);
+        btn = findViewById(R.id.btnActFour);
         btn.setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnActFive:
+            case R.id.btnActFour:
                 Intent intent = new Intent(this, MainActivity5.class);
                 startActivity(intent);
                 break;

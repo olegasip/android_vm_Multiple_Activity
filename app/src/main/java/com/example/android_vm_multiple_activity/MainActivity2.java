@@ -21,13 +21,13 @@ public class MainActivity2 extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        btn = findViewById(R.id.btnActThree);
+        btn = findViewById(R.id.btnActTwo);
         btn.setOnClickListener(this);
     }
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnActThree:
+            case R.id.btnActTwo:
                 Intent intent = new Intent(this, MainActivity3.class);
                 startActivity(intent);
                 break;
